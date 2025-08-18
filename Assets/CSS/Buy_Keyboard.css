@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(#84a9f8, #64a5f0);
+    color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.btn-back {
+    font-size: 30px;
+    padding: 0px 5px 0px 5px;
+    position: relative;
+    left: 50px;
+    z-index: 100;
+    bottom: 40px;
+    /* top: 40px; */
+    border-radius: 30px;
+    background-color: #f5c08e;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.btn-back:hover {
+    background-color: rgb(248, 121, 75);
+}
+#Buy_keyboard {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 70px;
+    box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.493);
+}
+
+.Buy_option {
+    display: flex;
+}
+
+.Keyboard_image {
+    margin-top: 20px;
+    padding: 30px;
+    width: 370px;
+    height: 300px;
+    border-radius: 20%;
+    position: relative;
+    z-index: 10;
+}
+.items_details {
+    margin-top: 45px;
+    text-align: center;   
+}
+.Keyboard_name {
+    font-size: 40px;
+    font-weight: 600;
+}
+.Rating {
+    padding: 10px;
+    font-size: 25px;
+}
+.Price {
+    margin: -0px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(255, 38, 0);
+}
+.Quantity {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(235, 51, 27);
+    margin: 0px;
+}
+.Buy_Cart {
+    margin: 40px;
+    display: inline;
+    display: flex;
+    gap: 10px;
+}
+.Buying {
+    background-color: rgb(95, 150, 231);
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+    transition: 0.6s;
+    border-radius: 30px;
+}
+.Cart {
+    background-color: orangered;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+.Buying:hover {
+    background-color: rgb(0, 183, 255);
+    cursor: pointer;
+}
+.Cart:hover {
+    background-color: rgb(248, 118, 71);
+    cursor: pointer;
+}
+
+/* Right Area Data */
+.Other_details {
+    position: relative;
+    top: 50px;
+    right: 30px;
+    font-size: 20px;
+    padding: 20px 0px 20px 0px;
+}
+.Location{
+    margin: 10px;
+}
+.warranty {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.Features {
+    font-size: 17.5px;
+    justify-self: center;
+}
