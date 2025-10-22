@@ -18,4 +18,3 @@ images.forEach((src, index) => {
     img.alt = `Image ${index + 1}`;
     container.appendChild(img);
 });
-
