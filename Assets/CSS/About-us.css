@@ -1,11 +1,7 @@
 body {
     background: linear-gradient(#84a9f8, #64a5f0);
-    color: black;
     margin: 0;
     font-family: Arial, sans-serif;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: auto;
 }
 
 /* Navigation */
@@ -63,12 +59,10 @@ nav {
 }
 
 .Logo-header {
-    justify-self: center;
     padding: 15px 595px;
     background: linear-gradient(#0000002f, #7dd5d88e, #00000031);
     box-shadow: 0px 4px 15px rgb(176, 247, 243);
     font-size: 25.5px;
-    font-weight: bold;
 }
 
 .info-section {
@@ -81,8 +75,7 @@ nav {
 .info-box {
     width: 350px;
     text-align: center;
-    border: 2px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px 35%;
     font-size: 19px;
     background: linear-gradient(#85e9ec8e, #ffffff60);
@@ -97,7 +90,6 @@ nav {
 
 .team-section {
     text-align: center;
-    padding: 40px;
     margin-top: 15px;
     padding: 10px 150px;
     max-width: 70%;
@@ -115,8 +107,7 @@ nav {
 
 .team-container {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    gap: 80px;
 }
 
 .circle {

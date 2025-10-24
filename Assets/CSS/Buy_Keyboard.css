@@ -10,10 +10,10 @@ body {
     font-size: 30px;
     padding: 0px 5px 0px 5px;
     position: relative;
-    left: 50px;
+    left: 60px;
     z-index: 100;
     bottom: 40px;
-    /* top: 40px; */
+    top: 45px;
     border-radius: 30px;
     background-color: #f5c08e;
     transition: 0.6s;
@@ -43,18 +43,26 @@ body {
     z-index: 10;
 }
 .items_details {
-    margin-top: 45px;
-    text-align: center;   
+    margin-top: 55px;
+    /* text-align: center;    */
+    position: relative;
+    left: 20px;
 }
-.Keyboard_name {
-    font-size: 40px;
+input {
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
     font-weight: 600;
+    border: none;
+    background-color: transparent;
 }
 .Rating {
     padding: 10px;
     font-size: 25px;
 }
 .Price {
+    position: relative;
+    /* left: 66px; */
     margin: -0px;
     padding: 10px;
     font-size: 30px;
@@ -67,10 +75,11 @@ body {
     margin: 0px;
 }
 .Buy_Cart {
-    margin: 40px;
-    display: inline;
+    margin: 30px;
     display: flex;
     gap: 10px;
+    position: relative;
+    left: -50px;
 }
 .Buying {
     background-color: rgb(95, 150, 231);
@@ -99,7 +108,7 @@ body {
 .Other_details {
     position: relative;
     top: 50px;
-    right: 30px;
+    right: 80px;
     font-size: 20px;
     padding: 20px 0px 20px 0px;
 }

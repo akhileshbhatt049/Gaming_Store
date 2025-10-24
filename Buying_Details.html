@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Details</title>
+        <link rel="stylesheet" type="text/css"
+            href="Assets/CSS/Buying_Details.css">
+    </head>
+   <body>
+        <div>
+            <h3 style="text-align: center;">Delivery Information</h2>
+            <form class="Full_details">
+                <div>
+                    <div class="Name_Location">
+                        <div>
+                            <p>Full Name <br/><input type="text" name="Name" placeholder="Enter your first and last name"/></p>
+                            <p>Phone Number<br/><input type="text" name="Number" placeholder="Please enter your phone number"></p>
+                            <p>Colony / Locality / Landmark <br/> <input type="text" name="Area" placeholder="Please enter"></p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <b>Choose Province:</b><br/>
+                                <select id="province" onchange="updatePlaces()">
+                                    <option value="">Choose Province</option>
+                                    <option value="koshi">Koshi</option>
+                                    <option value="madhesh">Madhesh</option>
+                                    <option value="bagmati">Bagmati</option>
+                                    <option value="gandaki">Gandaki</option>
+                                    <option value="lumbini">Lumbini</option>
+                                    <option value="karnali">Karnali</option>
+                                    <option value="sudurpaschim">Sudurpashchim</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <b>City:</b><br/>
+                                <select id="places" onchange="updateAreas()" disabled>
+                                    <option value="">--Select City--</option>
+                                </select>
+                                </p>
+
+                                <p>
+                                <b>Area:</b><br/>
+                                <select id="areas" disabled>
+                                    <option value="">--Select Area--</option>
+                                </select>
+                            </p>
+
+                            <script src="Assets/JS/Buy_Details.js"></script>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+<!-- <span id="productName"></span> -->
+        <div class="card">
+  <p><b>Product:</b><input type="text" id="productName" disabled/></p>
+  <p><b>Price:</b> $ <span id="productPrice"></span></p>
+  <button>Confirm Purchase</button>
+</div>
+
+<script>
+// Get product info from URL
+const params = new URLSearchParams(window.location.search);
+const name = params.get('name');
+const price = params.get('price');
+
+// Display on page
+document.getElementById('productName').textContent = name;
+document.getElementById('productPrice').textContent = price;
+</script>
+
+
+    </body>
+</html>

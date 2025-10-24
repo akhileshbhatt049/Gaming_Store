@@ -1,6 +1,5 @@
 body {
     background: linear-gradient(#84a9f8, #64a5f0);
-    color: black;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -14,13 +13,11 @@ header {
     background: linear-gradient(#7dd5d8, #7c7a7a);
     position: sticky;
     top: 0;
-    z-index: 10;
     font-weight: bold;
 }
 
 .logo-text {
     font-size: 38px;
-    font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -44,46 +41,33 @@ nav {
     color: red;
     background-color: rgb(109, 236, 166);
     border-radius: 20px;
-    padding: 5px;
+    padding: 8px;
 }
 
 
 /* Body Part */
-.reveal {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 1.5s;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 .gallery {
     justify-items: center;
     padding: 10px;
     background: linear-gradient(#0000002f, #7dd5d88e, #00000031);
     box-shadow: 0px 4px 15px rgb(176, 247, 243);
     font-size: 28px;
-    font-weight: bold;
     margin-bottom: 25px;
 }
 
 #imageContainer {
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    gap: 20px;
+    gap: 28px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #imageContainer img {
-    border: 1px solid rgb(121, 194, 236);
+    border: 1px solid rgb(27, 25, 24);
     border-radius: 20px 80px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-left: 25px;
-    margin-bottom: 10px;
     transition: 0.5s;
 }
 

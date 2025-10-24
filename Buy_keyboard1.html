@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Razer BlackWidow V4</title>
         <link rel="stylesheet"
@@ -7,6 +8,7 @@
         <link rel="stylesheet" type="text/css"
             href="Assets/CSS/Buy_Keyboard.css">
     </head>
+
     <body>
         <a href="Keyboards.html"><button class="btn-back"> &#8592;
                 back</button></a>
@@ -16,9 +18,12 @@
                     class="Keyboard_image" />
 
                 <div class="items_details">
-                    <span class="Keyboard_name">Razer BlackWidow V4</span>
+                    <span class="Keyboard_name"><input type="text"
+                            value="BlackWidow V4" disabled
+                            style="font-size: 40px;" /></span>
                     <div class="Rating"><b>⭐⭐⭐<b> Rating 3</b></b></div>
-                    <p class="Price">Price: $159.99</p>
+                    <p class="Price">Price: <input type="text" value="$159.99"
+                            disabled style="width: 90px" /></p>
 
                     <p class="Quantity">Quantity:
                         <button id="decrease"
@@ -33,15 +38,26 @@
 
                     <!-- Buy and Cart Option-->
                     <div class="Buy_Cart">
-                        <button class="Buying"> Buy Now </button>
+                        <button class="Buying"
+                            onclick="buyNow('Razer BlackWidow V4', 159.99)"> Buy
+                            Now </button>
+                        <script>
+                        function buyNow(name, price) {
+                            // Go to checkout page with product details in URL
+                            window.location.href = `Buying_details.html?name=${encodeURIComponent(name)}&price=${price}`;
+                        }
+                    </script>
+
                         <button class="Cart"> Add to Cart </button>
                     </div>
                 </div>
             </div>
             <div class="Other_details">
+                <b><u>Seller's Address</u></b><br />
+
                 <div class="fa fa-map-marker">
                     <span class="Location">
-                        <i>Bagmati, Kathmandu Metro 22 - Shantinagar, <br /> New
+                        <i>Bagmati, Kathmandu Metro 22 - Shantinagar, New
                             Baneshwor</i>
                     </span>
                 </div>
@@ -103,4 +119,5 @@
             </p>
         </div>
     </body>
+
 </html>
