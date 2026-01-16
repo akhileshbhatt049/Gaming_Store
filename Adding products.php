@@ -18,7 +18,7 @@ $sql = "CREATE TABLE IF NOT EXISTS PRODUCTS(
 mysqli_query($conn, $sql);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $targetDir = "uploads/";
+    $targetDir = "Assets/Images/";
     if (!is_dir($targetDir)) {
         mkdir($targetDir, 0777, true);
     }
