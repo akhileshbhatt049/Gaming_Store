@@ -1,3 +1,5 @@
+/* I will handle this page */
+
 /* body {
   background: linear-gradient(#84a9f8, #64a5f0);
   color: black;
@@ -56,7 +58,7 @@ input[type="submit"] {
 
 
  body { font-family: Arial, sans-serif; margin: 20px;
-  /* background: linear-gradient(#84a9f8, #64a5f0); */
+  background: linear-gradient(#84a9f8, #64a5f0);
  }
         form { max-width: 700px; margin: auto; }
         input, select { width: 100%; padding: 8px; margin: 5px 0 15px; font-size: 16px; }
